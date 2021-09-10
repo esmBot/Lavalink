@@ -28,9 +28,9 @@ allprojects {
         mavenCentral()                     // main maven repo
         jcenter()                          // JDA and some other stuff
         mavenLocal()                       // useful for developing
-        maven { url 'https://dl.bintray.com/gabixdev/kyoko' }
+        maven { url 'https://dankmemeitthefrog.github.io/maven-repo' }
         maven { url "https://jitpack.io" } // build projects directly from github
-        maven { url 'https://dl.bintray.com/sedmelluq/com.sedmelluq' }
+        maven { url 'https://m2.dv8tion.net/releases' }
     }
 
     group = 'lavalink'
