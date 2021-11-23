@@ -1,3 +1,7 @@
+# Related
+LavaDSP - https://github.com/Stonedestroyer/lavadsp (Contains different glibc, and code for mac m1 architecture)  
+Lavaplayer - https://github.com/Stonedestroyer/lavaplayer-fork (Based off Walkyst original) - Removed darwin check
+
 # Lavalink
 Standalone audio sending node based on Lavaplayer and JDA-Audio.
 Allows for sending audio without it ever reaching any of your shards.
