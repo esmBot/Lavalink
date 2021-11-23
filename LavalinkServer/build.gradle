@@ -41,14 +41,14 @@ dependencies {
     compile group: 'moe.kyokobot.koe', name: 'ext-udpqueue', version: koeVersion
     // compile group: 'com.github.walkyst', name: 'lavaplayer-fork', version: '1.3.96'
     // Mac architecture support
-    compile group: 'com.github.stonedestroyer', name: 'lavaplayer-fork', version: '1.3.96'
+    compile group: 'com.github.stonedestroyer', name: 'lavaplayer-fork', version: '8ef0230095'
     //compile group: 'com.sedmelluq', name: 'lavaplayer', version: lavaplayerVersion
     compile(group: 'com.sedmelluq', name: 'lavaplayer-ext-youtube-rotator', version: lavaplayerIpRotatorVersion) {
         exclude group: 'com.sedmelluq', module: 'lavaplayer'
     }
     // compile group: 'com.github.natanbc', name: 'lavadsp', version: lavaDspVersion
     // Our own version that contains latest changes
-    compile group: 'com.github.stonedestroyer', name: 'lavadsp', version: 'a7ee77505d01369edebdd7854af125c35be5ee4a'
+    compile group: 'com.github.stonedestroyer', name: 'lavadsp', version: '8c0c4e14e2'
     compile group: 'org.jetbrains.kotlin', name: 'kotlin-reflect', version: kotlinVersion
 
     compile group: 'org.springframework', name: 'spring-websocket', version: springWebSocketVersion
