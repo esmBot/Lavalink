@@ -44,7 +44,9 @@ dependencies {
     compile(group: 'com.sedmelluq', name: 'lavaplayer-ext-youtube-rotator', version: lavaplayerIpRotatorVersion) {
         exclude group: 'com.sedmelluq', module: 'lavaplayer'
     }
-    compile group: 'com.github.natanbc', name: 'lavadsp', version: lavaDspVersion
+    // compile group: 'com.github.natanbc', name: 'lavadsp', version: lavaDspVersion
+    // Our own version that contains latest changes
+    compile group: 'com.github.stonedestroyer', name: 'lavadsp', version: 'a7ee77505d01369edebdd7854af125c35be5ee4a'
     compile group: 'org.jetbrains.kotlin', name: 'kotlin-reflect', version: kotlinVersion
 
     compile group: 'org.springframework', name: 'spring-websocket', version: springWebSocketVersion
