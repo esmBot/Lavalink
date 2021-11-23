@@ -48,6 +48,7 @@ dependencies {
     }
     // compile group: 'com.github.natanbc', name: 'lavadsp', version: lavaDspVersion
     // Our own version that contains latest changes
+    // https://github.com/Stonedestroyer/lavadsp/commit/8c0c4e14e221ceb9873acc493384784b2ddd2f9e
     compile group: 'com.github.stonedestroyer', name: 'lavadsp', version: '8c0c4e14e2'
     compile group: 'org.jetbrains.kotlin', name: 'kotlin-reflect', version: kotlinVersion
 
