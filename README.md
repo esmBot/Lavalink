@@ -1,3 +1,8 @@
+# Related
+LavaDSP - https://github.com/Stonedestroyer/lavadsp (Contains different glibc, and code for mac m1 architecture)  
+Native-Loader - https://github.com/Stonedestroyer/native-loader (M1 changes, used by LavaDSP)  
+Lavaplayer - https://github.com/Stonedestroyer/lavaplayer-fork (Based off Walkyst original) - Removed darwin check
+
 # Lavalink
 A standalone audio sending node based on Lavaplayer and JDA-Audio.
 Allows for sending audio without it ever reaching any of your shards.
