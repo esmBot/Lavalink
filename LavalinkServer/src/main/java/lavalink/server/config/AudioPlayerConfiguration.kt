@@ -1,5 +1,6 @@
 package lavalink.server.config
 
+import com.sedmelluq.discord.lavaplayer.container.MediaContainerRegistry
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayerManager
 import com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager
 import com.sedmelluq.discord.lavaplayer.source.AudioSourceManager
@@ -25,6 +26,7 @@ import com.sedmelluq.lava.extensions.youtuberotator.planner.RotatingNanoIpRouteP
 import com.sedmelluq.lava.extensions.youtuberotator.tools.ip.Ipv4Block
 import com.sedmelluq.lava.extensions.youtuberotator.tools.ip.Ipv6Block
 import dev.arbjerg.lavalink.api.AudioPlayerManagerConfiguration
+import com.sedmelluq.lavaplayer.extensions.format.xm.XmContainerProbe;
 import org.slf4j.LoggerFactory
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -109,6 +111,7 @@ class AudioPlayerConfiguration {
         if (sources.isTwitch) audioPlayerManager.registerSourceManager(TwitchStreamAudioSourceManager())
         if (sources.isVimeo) audioPlayerManager.registerSourceManager(VimeoAudioSourceManager())
         if (sources.isMixer) audioPlayerManager.registerSourceManager(BeamAudioSourceManager())
+        if (sources.isHttp) audioPlayerManager.registerSourceManager(HttpAudioSourceManager(MediaContainerRegistry.extended(XmContainerProbe())))
         if (sources.isLocal) audioPlayerManager.registerSourceManager(LocalAudioSourceManager())
 
         audioSourceManagers.forEach {

@@ -58,6 +58,9 @@ dependencies {
     compile(group: 'com.sedmelluq', name: 'lavaplayer-ext-youtube-rotator', version: lavaplayerIpRotatorVersion) {
         exclude group: 'com.sedmelluq', module: 'lavaplayer'
     }
+    compile(group: 'com.sedmelluq', name: 'lavaplayer-ext-format-xm', version: lavaplayerFormatXMVersion) {
+        exclude group: 'com.sedmelluq', module: 'lavaplayer'
+    }
     compile group: 'com.github.natanbc', name: 'lavadsp', version: lavaDspVersion
     compile group: 'org.jetbrains.kotlin', name: 'kotlin-reflect', version: kotlinVersion
 
