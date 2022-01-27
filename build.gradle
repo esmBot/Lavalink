@@ -57,7 +57,7 @@ subprojects {
         
         lavaplayerVersion               = '1.3.97'
         lavaplayerIpRotatorVersion      = '0.2.3'
-        lavaplayerFormatXMVersion       = '0.1.1'
+        lavaplayerFormatXMVersion       = '0.1.2'
         jdaNasVersion                   = '1.1.0'
         jappVersion                     = '1.3.2-MINN'
         koeVersion                      = '1.0.1'
